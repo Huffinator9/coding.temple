@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Nerd Watchtower Event Center</title>
+  </head>
+  <body>
+    <header>
+     <img class="center" src="assets/pix/nwt.wb.logo.png" alt="Web Builders Logo" style="width:150px;padding:20px 0 0 0;"> 
+     <nav class="center">
+       <ul>
+	 <li><a href="index.html">Home</a></li>
+	 <li><a href="events.html">Events</a></li>
+	 <li><a href="menu.html">Menu</a></li>
+	 <li><a href="location.html">Location</a></li>
+	 <li><a href="contact.html">Contact Us</a></li>
+       </ul>
+     </nav>
+    </header>
+    <div>
+      <form action="/submit" method="POST">
+	<!-- Personal Information -->
+	<fieldset>
+	  <legend> Personal Information </legend>
+	  <label for="name"> Name: </label>
+	  <input type="text" id="name" required placeholder="chris huffer">
+	  <br>
+	  <label for="email"> Email: </label>
+	  <input type="text" id="name" required placeholder="chris.huffer@nerdwatchtower.com">
+	</fieldset>
+	<!-- Query Information -->
+	<fieldset>
+	  <legend> Query Information </legend>
+	  <label for="topic"> Topic: </label>
+	  <select id="topic" required name="topic">
+ 	    <option value="bday"> Birthday Party </option>
+ 	    <option value="general"> General Query </option>
+ 	    <option value="packages"> Package Deals </option>
+	  </select>
+	  <br>
+	  <label for="query"> Request: </label>
+	  <br>
+	  <textarea id="query" name="query" rows="4" cols="50" placeholder="I had a question about hosting a birthday party at your event center."></textarea>
+	</fieldset>
+      </form>
+      <footer>
+	<p> Copyright &copy;2025 Nerd Watchtower Web Builders </p>
+      </footer>
+    </div>      
+  </body>
+</html>  
