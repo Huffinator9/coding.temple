@@ -1,19 +1,17 @@
 body {
     background-color: black;
     color: whitesmoke;
-    display: flex;
+}
+header {
+    background-color: #606166;
 }
 footer {
     background-color: #606166;
     color: whitesmoke;
     font-weight: bold;
     margin: 20px 0 0 0;
-    position: fixed;
     text-align: center;
     width: 100%;
-}
-header {
-    background-color: #606166;
 }
 html {
     font-size: 16px;
@@ -30,13 +28,19 @@ nav ul a {
     font-weight: bold;
     text-decoration: none; /* remove underline */
 }
+table, tr, th, td, caption {
+    border: 1px solid #888;
+    font-family: 'courier new', courier, monospace;
+    border-collapse: collapse;
+    padding: .5rem;
+}
 /* classes */
 .center {
     display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
 }
 .membership-table {
     justify-content: center;
