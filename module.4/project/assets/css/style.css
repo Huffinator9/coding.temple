@@ -1,6 +1,11 @@
+article {
+    display: flex;
+    justify-content: center;
+}
 body {
     background-color: black;
     color: whitesmoke;
+    min-height: 100vh;
 }
 header {
     background-color: #606166;
@@ -16,17 +21,29 @@ footer {
 html {
     font-size: 16px;
 }
+nav {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+    width: 100%; /* take whole container */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 nav ul {
     list-style: none; /* remove style */
+    height: 100%;
 }
 nav ul li {
     display: inline; /* display list in a row */
+    height: auto;
     margin-right: 20px;
 }
 nav ul a {
-    color: black;
+    color: whitesmoke;
     font-weight: bold;
     text-decoration: none; /* remove underline */
+}
+nav ul a:hover{
+    color: black;
 }
 table, tr, th, td, caption {
     border: 1px solid #888;
@@ -42,9 +59,16 @@ table, tr, th, td, caption {
     margin-right: auto;
     width: 100%;
 }
+.logo {
+    margin-right: auto;
+    width: 150px;
+}
 .membership-table {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+.Sabbath {
+    background: red;
 }
