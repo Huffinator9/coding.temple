@@ -58,6 +58,15 @@ table, tr, th, td, caption {
     margin-right: auto;
     width: 100%;
 }
+.event-grid {
+    display: flex;
+}
+.event {
+    width: 300px;
+}
+.event img {
+    width: 100%;
+}
 .logo {
     margin-right: auto;
     width: 150px;
