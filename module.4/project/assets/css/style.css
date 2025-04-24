@@ -1,11 +1,15 @@
-article {
-    display: flex;
-    justify-content: center;
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
 }
 body {
-    background-color: black;
     color: whitesmoke;
     min-height: 100vh;
+    background-image: url(../pix/background.png);
+    text-align: center;
 }
 header {
     background-color: #606166;
@@ -18,14 +22,14 @@ footer {
     text-align: center;
     width: 100%;
 }
-html {
-    font-size: 16px;
-}
 nav {
     width: 100%; /* take whole container */
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+nav img {
+    padding: 10px;
 }
 nav ul {
     list-style: none; /* remove style */
@@ -49,6 +53,10 @@ table, tr, th, td, caption {
     font-family: 'courier new', courier, monospace;
     border-collapse: collapse;
     padding: .5rem;
+}
+article {
+    display: flex;
+    justify-content: center;
 }
 /* classes */
 .center {
@@ -79,4 +87,7 @@ table, tr, th, td, caption {
 }
 .Sabbath {
     background: red;
+}
+.welcome{
+    background-color: #333;
 }
