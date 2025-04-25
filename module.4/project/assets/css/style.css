@@ -1,8 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+  /*  border: 3px solid whitesmoke;*/
 }
 html {
+    font-family: 'courier new', courier, monospace;
     font-size: 16px;
 }
 body {
@@ -12,6 +14,7 @@ body {
     text-align: center;
 }
 header {
+    width: 100%;
     background-color: #606166;
 }
 footer {
@@ -23,7 +26,6 @@ footer {
     width: 100%;
 }
 nav {
-    width: 100%; /* take whole container */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -46,11 +48,18 @@ nav ul a {
     text-decoration: none; /* remove underline */
 }
 nav ul a:hover{
-    color: black;
+    border-bottom: 3px solid whitesmoke;
+}
+section ul {
+    list-style: none; /* remove style */
+    height: 100%;
+}
+section ul li {
+    height: auto;
+    margin-right: 20px;
 }
 table, tr, th, td, caption {
     border: 1px solid #888;
-    font-family: 'courier new', courier, monospace;
     border-collapse: collapse;
     padding: .5rem;
 }
@@ -67,13 +76,23 @@ article {
     width: 100%;
 }
 .event-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .event {
     width: 300px;
+    margin-inline: auto;
+    margin-block: 15px;
+    border-radius: 15px;
+    border: 3px solid #680095 ;
+    background-color: #FFFFFF33;
+    backdrop-filter: blur(10px);
+    align-content: center;
 }
 .event img {
-    width: 100%;
+    width: 95%;
+    border-radius: 15px;
+    padding-top: 10px;
 }
 .logo {
     margin-right: auto;
@@ -89,5 +108,11 @@ article {
     background: red;
 }
 .welcome{
-    background-color: #333;
+    background-color: #FFFFFF33;
+    backdrop-filter: blur(10px);
+    border: 3px solid #680095;
+    border-radius: 15px;
+    margin-inline: auto;
+    margin-block: 20px;
+    width: 75%;
 }
