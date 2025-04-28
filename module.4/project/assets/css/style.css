@@ -10,7 +10,10 @@ html {
 body {
     color: whitesmoke;
     min-height: 100vh;
+    background-color: black;
     background-image: url(../pix/background.png);
+    background-size: 450px;
+    background-repeat: space;
     text-align: center;
 }
 header {
@@ -59,7 +62,7 @@ section ul li {
     margin-right: 20px;
 }
 table, tr, th, td, caption {
-    border: 1px solid #888;
+    border: 5px solid #680095;
     border-collapse: collapse;
     padding: .5rem;
 }
@@ -67,12 +70,14 @@ article {
     display: flex;
     justify-content: center;
 }
+fieldset {
+    margin: 15px;
+}
 /* classes */
 .center {
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
     width: 100%;
 }
 .event-grid {
