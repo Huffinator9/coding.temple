@@ -6,27 +6,36 @@
 html {
     font-family: 'courier new', courier, monospace;
     font-size: 16px;
+    height: 100%;
 }
 body {
     color: whitesmoke;
-    min-height: 100vh;
+    min-height: 100%;
     background-color: black;
     background-image: url(../pix/background.png);
     background-size: 450px;
     background-repeat: space;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 header {
     width: 100%;
     background-color: #606166;
 }
+main {
+    min-height: 100%;
+}
 footer {
     background-color: #606166;
     color: whitesmoke;
     font-weight: bold;
-    margin: 20px 0 0 0;
+    margin-top: auto;
     text-align: center;
     width: 100%;
+}
+h1, h2, h3 {
+    padding: 5px;
 }
 nav {
     display: flex;
@@ -56,6 +65,7 @@ nav ul a:hover{
 section ul {
     list-style: none; /* remove style */
     height: 100%;
+    padding: 5px;
 }
 section ul li {
     height: auto;
@@ -72,6 +82,15 @@ article {
 }
 fieldset {
     margin: 15px;
+}
+button {
+    display: block;
+    margin-inline: auto;
+    margin-block: 10px;
+    padding: 5px;
+}
+p {
+    padding: 5px;
 }
 /* classes */
 .center {
