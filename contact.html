@@ -9,7 +9,7 @@
   <body>
     <header>
      <nav>
-	<img class="logo" src="assets/pix/logo.wht.svg" alt="Web Builders Logo"> 
+	<img class="logo" src="assets/imgs/logo.wht.svg" alt="Web Builders Logo"> 
        <ul>
 	 <li><a href="index.html">Home</a></li>
 	 <li><a href="events.html">Events</a></li>
@@ -22,22 +22,19 @@
     <main class='welcome'>
       <h1> Contact Us </h1>
       <section class='event-grid'>
-	<section>
+	<section class="event">
 	  <form action="/submit" method="POST">
 	    <!-- Personal Information -->
-	    <fieldset>
-	      <legend> Personal Information </legend>
+	      <p> Personal Information </p>
 	      <label for="name"> Name: </label>
 	      <input type="text" id="name" required placeholder="Name">
 	      <br>
 	      <label for="email"> Email: </label>
 	      <input type="text" id="name" required placeholder="Email">
-	    </fieldset>
 	</section>
-	<section>
+	<section class="event">
 	  <!-- Query Information -->
-	  <fieldset>
-	    <legend> Query Information </legend>
+	    <p> Query Information </p>
 	    <label for="topic"> Topic: </label>
 	    <select id="topic" required name="topic">
  	      <option value="bday"> Birthday Party </option>
@@ -47,8 +44,7 @@
 	    <br>
 	    <label for="query"> Request: </label>
 	    <br>
-	    <textarea id="query" name="query" rows="4" cols="50">I had a question about...</textarea>
-	  </fieldset>
+	    <textarea id="query" name="query" rows="4">I had a question about...</textarea>
 	</section>
 	</form>
       </section>

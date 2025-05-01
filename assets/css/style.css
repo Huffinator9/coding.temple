@@ -12,7 +12,7 @@ body {
     color: whitesmoke;
     min-height: 100%;
     background-color: black;
-    background-image: url(../pix/background.png);
+    background-image: url(../imgs/background.png);
     background-size: 450px;
     background-repeat: space;
     display: flex;
@@ -81,7 +81,10 @@ article {
     justify-content: center;
 }
 fieldset {
-    margin: 15px;
+    padding: 15px;
+}
+textarea {
+    width: 90%;
 }
 button {
     display: block;
@@ -91,6 +94,22 @@ button {
 }
 p {
     padding: 5px;
+}
+@media screen and (max-width: 950px) {
+    table, th, td {
+	font-size: 75%;
+    }
+    table img {
+	zoom: 50%;
+    }
+}
+@media screen and (max-width: 500px) {
+    table, th, td {
+	font-size: 50%;
+    }
+    table img {
+	zoom: 25%;
+    }
 }
 /* classes */
 .center {
@@ -138,5 +157,5 @@ p {
     border-radius: 15px;
     margin-inline: auto;
     margin-block: 20px;
-    width: 75%;
+    width: 90%;
 }
