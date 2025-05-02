@@ -95,21 +95,8 @@ button {
 p {
     padding: 5px;
 }
-@media screen and (max-width: 950px) {
-    table, th, td {
-	font-size: 75%;
-    }
-    table img {
-	zoom: 50%;
-    }
-}
-@media screen and (max-width: 500px) {
-    table, th, td {
-	font-size: 50%;
-    }
-    table img {
-	zoom: 25%;
-    }
+iframe {
+    width: 95%;
 }
 /* classes */
 .center {
@@ -158,4 +145,21 @@ p {
     margin-inline: auto;
     margin-block: 20px;
     width: 90%;
+}
+/* media queries */
+@media screen and (max-width: 950px) {
+    table, th, td {
+	font-size: 75%;
+    }
+    table img {
+	zoom: 50%;
+    }
+}
+@media screen and (max-width: 500px) {
+    table, th, td {
+	font-size: 50%;
+    }
+    table img {
+	zoom: 25%;
+    }
 }
