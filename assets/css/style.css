@@ -157,7 +157,7 @@ iframe {
 }
 @media screen and (max-width: 500px) {
     table, th, td {
-	font-size: 50%;
+	font-size: 75%;
     }
     table img {
 	zoom: 25%;
