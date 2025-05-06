@@ -74,7 +74,7 @@ section ul li {
 table, tr, th, td, caption {
     border: 5px solid #680095;
     border-collapse: collapse;
-    padding: .5rem;
+    padding: .25rem;
 }
 article {
     display: flex;
@@ -157,7 +157,7 @@ iframe {
 }
 @media screen and (max-width: 500px) {
     table, th, td {
-	font-size: 75%;
+	font-size: 65%;
     }
     table img {
 	zoom: 25%;
